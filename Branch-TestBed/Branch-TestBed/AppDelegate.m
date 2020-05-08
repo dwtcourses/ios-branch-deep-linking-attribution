@@ -44,8 +44,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     /*
      *    Required: Initialize Branch, passing a deep link handler block:
      */
-
-    // [branch setIdentity:@"Bobby Branch"];
     [branch initSessionWithLaunchOptions:launchOptions
         andRegisterDeepLinkHandlerUsingBranchUniversalObject:
         ^ (BranchUniversalObject * _Nullable universalObject, BranchLinkProperties * _Nullable linkProperties, NSError * _Nullable error) {
